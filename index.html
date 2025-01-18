@@ -29,6 +29,21 @@
         grid-template-columns: repeat(2,1fr);
         gap: 5px;
     }
+    @media screen and (max-width:576px) {
+.row-another{
+    flex-direction: column;
+    height: auto;
+}
+.squre-box{
+    grid-template-columns: 1fr;
+}
+    }
+    @media screen and (min-width:576px) and (max-width:992px) {
+        .row-another{
+    flex-direction: column;
+    height: auto;
+        }
+    }
 </style>
 <body>
     <div class="row">
